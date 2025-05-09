@@ -1,7 +1,7 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #121212;
+    background: linear-gradient(to bottom, #2a2a2a, #000000);
     color: white;
     display: flex;
     justify-content: center;
@@ -11,9 +11,10 @@ body {
 
 .main-container {
     width: 100%;
-    max-width: 400px;
+    height: 86vh;
+    max-width: 700px;
     padding: 20px;
-    background-color: #1c1c1c;
+    background-color: #121212;
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
     text-align: center;
@@ -34,37 +35,155 @@ h1 {
 }
 
 .social-login {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Align buttons to the center */
+    justify-content: center; /* Center vertically if needed */
     margin-bottom: 20px;
 }
 
 .social-btn {
-    width: 100%;
-    padding: 10px;
-    margin: 5px 0;
+    width: 80%; /* Adjust width to make it consistent */
+    padding: 15px 20px;
+    margin: 10px 0; /* Add consistent spacing between buttons */
     border: none;
-    border-radius: 4px;
+    border-radius: 20px;
     font-size: 16px;
     cursor: pointer;
+    display: flex;
+    margin-bottom: 0px;
+    align-items: center;
+    position: relative; /* Enable positioning for the icon */
+    text-align: center; /* Keep the text centered */
 }
 
-.google {
-    background-color: #4285F4;
-    color: white;
+hr {
+    border-top: 1px solid rgb(41, 41, 41);
+    margin: 32px 100px;
+    border-right: none;
+    border-left: none;
+    border-bottom: none;
+    border-image: initial;
 }
+
+
+.login-form .email-box{
+    align-items: center;
+    width: 36%;
+    background: transparent;
+    padding: 12px;
+    margin: 1px 0;;
+    border: 1px solid #bfbdbd;
+    border-radius: 4px;
+    color: rgb(119, 118, 118);
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 40px;
+    
+}
+.login-form .email-box:hover {
+    border: 1px solid #ffffff;
+   
+}
+
+h4 {
+    
+    font-size: 0.875rem;
+    font-weight: 700;
+    text-align: left;
+    margin: 0;
+    margin-left: 31%;
+    margin-bottom: 6px;
+    font-family: sans-serif;
+}
+
+
+.social-btn .icon {
+    position: absolute; /* Position the icon absolutely */
+    left: 30px; /* Move the icon to the left */
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0; /* Prevent the icon from shrinking */
+}
+
+.social-btn span {
+    flex: 1; /* Allow the text to take up remaining space */
+    text-align: center; /* Center the text */
+}
+
+.google {  
+    color: white;
+    border-radius: 20px;
+    padding: 12px 30px;
+    background: transparent;
+    border: 0;
+    outline: none;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 600;
+    width: 50%;
+    border: 1px solid #818080;
+    border-radius: 20px;
+}
+
+.google:hover {
+    border: 1px solid #ffffff;
+}
+
 
 .facebook {
-    background-color: #3b5998;
     color: white;
+    border-radius: 20px;
+    padding: 12px 30px;
+    background: transparent;
+    border: 0;
+    outline: none;
+    font-size: 15px;
+    font-weight: 600;
+    color: #ffffff;
+    width: 50%;
+    border: 1px solid #818080;
+    border-radius: 20px;
+}
+.facebook:hover {
+    border: 1px solid #ffffff;
 }
 
 .apple {
-    background-color: black;
     color: white;
+    border-radius: 20px;
+    padding: 12px 30px;
+    background: transparent;
+    border: 0;
+    outline: none;
+    font-size: 15px;
+    font-weight: 600;
+    color: #ffffff;
+    width: 50%;
+    border: 1px solid #818080;
+    border-radius: 20px;
+}
+
+.apple:hover {
+    border: 1px solid #ffffff;
 }
 
 .phone {
-    background-color: #1DB954;
     color: white;
+    border-radius: 20px;
+    padding: 12px 30px;
+    background: transparent;
+    border: 0;
+    outline: none;
+    font-size: 15px;
+    font-weight: 600;
+    color: #ffffff;
+    width: 50%;
+    border: 1px solid #818080;
+    border-radius: 20px;
+}
+.phone:hover {
+    border: 1px solid #ffffff;
 }
 
 .login-form input {
@@ -78,31 +197,39 @@ h1 {
 }
 
 .login-btn {
-    width: 100%;
-    padding: 10px;
-    background-color: #1DB954;
-    color: white;
+    width: 45%;
+    height: 45px;
+    padding: 12px;
+    margin-top: -15px;
+    font-size: 12px;
+    font-weight: 600;
+    background-color: #1ed760;
+    color: rgb(0, 0, 0);
     border: none;
-    border-radius: 4px;
+    border-radius: 50px;
     font-size: 16px;
     cursor: pointer;
+    transition: all 0.1s ease-in-out;
 }
 
 .login-btn:hover {
-    background-color: #1aa34a;
+    background-color: #3be477;
+    transform: scale(1.03);
 }
 
 p {
     margin: 10px 0;
     font-size: 14px;
+    color: #b3b3b3;
+    font-weight: 400;
+    margin-top: 42px;
 }
 
 a {
-    color: #1DB954;
-    text-decoration: none;
-}
-
-a:hover {
+    color: #ffffff;
     text-decoration: underline;
 }
 
+a:hover {
+    color: #1ed760;
+}
